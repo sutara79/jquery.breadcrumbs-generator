@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<title>jquery.breadcrumbs-generator</title>
+		<style>
+			#breadcrumbs li {
+				display: inline-block;
+			}
+			#breadcrumbs li:not(:first-child) {
+				margin-left: 0.4em;
+			}
+			#breadcrumbs li:not(:first-child):before {
+				content: ">";
+				margin-right: 0.4em;
+			}
+		</style>
+	</head>
+	<body>
+		<ol id="breadcrumbs">
+			<li><a href="index.html">Home</a></li>
+		</ol>
+		<ul id="sitemap">
+			<li>
+				<a href="menu1.html">Menu1</a>
+				<ul>
+					<li><a href="menu1-1.html">Menu1-1</a></li>
+					<li><a href="menu1-2.html">Menu1-2</a></li>
+				</ul>
+			</li>
+			<li><a href="menu2.html">Menu2</a></li>
+			<li>
+				<a href="menu3.html">Menu3</a>
+				<ul>
+					<li><a href="menu3-1.html">Menu3-1</a></li>
+					<li>
+						<a href="menu3-2.html">Menu3-2</a>
+						<ul>
+							<li><a href="menu3-2-1.html">Menu3-2-1</a></li>
+							<li><a href="menu3-2-2.html">Menu3-2-2</a></li>
+							<li><a href="menu3-2-3.html">Menu3-2-3</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="menu3-2.html">Menu3-3</a>
+						<ul>
+							<li><a href="menu3-3-1.html">Menu3-3-1</a></li>
+							<li><a href="menu3-3-2.html">Menu3-3-2</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+		<!-- JavaScript -->
+		<script src="//code.jquery.com/jquery.min.js"></script>
+		<script src="jquery.breadcrumbs-generator.js"></script>
+		<script>
+			jQuery('#breadcrumbs').breadcrumbsGenerator();
+			// jQuery(document).ready(function() {
+			// 	// オプション
+			// 	var sitemap = $('#sitemap');
+			// 	var breadcrumbs = $('#breadcrumbs');
+			// 	var index_path = 'index.html';
+
+
+			// 	var target_path = window.location.pathname.split("/").pop();
+			// 	if (target_path == '') target_path = index_path;
+			// 	target_path = 'menu3-2-2.html'; //TODO: 仮の設定
+			// 	var target_elem = $(sitemap).find('a[href*="' + target_path + '"]');
+
+			// 	// ホームへのリンクが存在する場合、prependに備えて退避させておく。
+			// 	var origin_elem = $(breadcrumbs).children();
+			// 	$(breadcrumbs).empty();
+
+			// 	$(target_elem)
+			// 		.parentsUntil(sitemap)
+			// 		.filter(':has(> a[href])')
+			// 		.each(function() {
+			// 			$('<li>')
+			// 				.append($(this).children('a').clone())
+			// 				.prependTo(breadcrumbs);
+			// 		});
+
+			// 	// 退避させたものを追加する
+			// 	$(breadcrumbs).prepend(origin_elem);
+
+			// 	// 現在のページはリンクを外す
+			// 	$(breadcrumbs)
+			// 		.find('a[href*="' + target_path + '"]')
+			// 		.each(function() {
+			// 			$(this).parent().text($(this).text());
+			// 		});
+			// });
+		</script>
+	</body>
+</html>
