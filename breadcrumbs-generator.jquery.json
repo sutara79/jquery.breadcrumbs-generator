@@ -1,0 +1,26 @@
+{
+	"name": "breadcrumbs-generator",
+	"title": "jquery.breadcrumbs-generator", 
+	"description": "A jQuery plugin for generating a breadcrumbs automatically from sitemaps.",
+	"version": "1.0.0",
+	"keywords": [
+		"breadcrumbs"
+	],
+	"author": {
+		"name": "Yuusaku Miyazaki",
+		"email": "toumin.m7@gmail.com",
+		"url": "https://github.com/sutara79"
+	},
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "http://opensource.org/licenses/MIT"
+		}
+	],
+	"dependencies": {
+		"jquery": ">=1.9"
+	},
+	"demo": "http://www.usamimi.info/~sutara/sample2/breadcrumbs-generator/",
+	"docs": "http://www.usamimi.info/~sutara/sample2/breadcrumbs-generator/jsdoc",
+	"bugs": "https://github.com/sutara79/jquery.breadcrumbs-generator/issues"
+}

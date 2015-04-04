@@ -70,7 +70,7 @@ $('#breadcrumbs').breadcrumbsGenerator({
 ```
 
 ##### index_type
-It is necessary when the requested url is a directory (e.g. `example.com/`) but not a file (e.g. `example.com/index.html`).
+This is for when the requested url is a directory (e.g. `example.com/`) but not a file (e.g. `example.com/index.html`).
 
 ## Author
 Yuusaku Miyazaki (宮崎 雄策)
