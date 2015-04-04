@@ -77,7 +77,7 @@ Yuusaku Miyazaki (宮崎 雄策)
 
 - Mail: <toumin.m7@gmail.com>
 - Twitter: [twitter.com/sutara_lumpur](//twitter.com/sutara_lumpur)
-- Blog: [sutara79.hatenablog.com/](//sutara79.hatenablog.com/)
+- Blog: [sutara79.hatenablog.com/entry/2015/04/04/215219](//sutara79.hatenablog.com/entry/2015/04/04/215219)
 
 ## License
 [MIT License](http://www.opensource.org/licenses/mit-license.php)

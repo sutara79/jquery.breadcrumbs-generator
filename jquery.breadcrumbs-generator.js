@@ -54,7 +54,7 @@ $.extend(BreadcrumbsGenerator.prototype, /** @lends BreadcrumbsGenerator.prototy
 	 * @desc パンくず生成の処理の本体
 	 */
 	main: function() {
-		var target_path = window.location.pathname.split("/").pop();
+		var target_path = window.location.pathname.split('/').pop();
 		if (target_path == '') target_path = this.option.index_type;
 		var target_elem = $(this.option.sitemaps).find('a[href*="' + target_path + '"]');
 
