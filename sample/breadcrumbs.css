@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+#breadcrumbs li {
+	display: inline-block;
+}
+#breadcrumbs li:not(:first-child) {
+	margin-left: 0.4em;
+}
+#breadcrumbs li:not(:first-child):before {
+	content: ">";
+	margin-right: 0.4em;
+}
