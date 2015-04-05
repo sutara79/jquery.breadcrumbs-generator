@@ -2,7 +2,7 @@
 A jQuery plugin for generating a breadcrumbs automatically from sitemaps.  
 If you can use a server-side language (e.g. PHP, Ruby, Perl), you don't need this plugin.
 
-![screenshot](//www.usamimi.info/~sutara/sample2/breadcrumbs-generator/sample/ss1.png)
+![screenshot](http://www.usamimi.info/~sutara/sample2/breadcrumbs-generator/sample/ss1.png)
 
 - Demo: [www.usamimi.info/~sutara/sample2/breadcrumbs-generator/](//www.usamimi.info/~sutara/sample2/breadcrumbs-generator/)
 - JSDoc: [www.usamimi.info/~sutara/sample2/breadcrumbs-generator/jsdoc](//www.usamimi.info/~sutara/sample2/breadcrumbs-generator/jsdoc)
