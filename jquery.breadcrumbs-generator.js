@@ -1,7 +1,7 @@
 /**
  * @file jQuery Plugin: jquery.breadcrumbs-generator
  * @version 1.0.0
- * @author Yuusaku Miyazaki [toumin.m7@gmail.com]
+ * @author Yuusaku Miyazaki <toumin.m7@gmail.com>
  * @license MIT License
  */
 (function($) {
