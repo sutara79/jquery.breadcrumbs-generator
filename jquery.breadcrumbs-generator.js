@@ -64,7 +64,7 @@ $.extend(BreadcrumbsGenerator.prototype, /** @lends BreadcrumbsGenerator.prototy
 
 		var self = this;
 		$(target_elem)
-			.parentsUntil(sitemaps)
+			.parentsUntil(this.option.sitemaps)
 			.filter(':has(> a[href])')
 			.each(function() {
 				$('<li>')
