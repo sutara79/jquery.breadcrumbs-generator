@@ -1,0 +1,31 @@
+{
+  "name": "jquery.breadcrumbs-generator",
+  "description": "jQuery plugin to generate breadcrumb list automatically from sitemap.",
+  "version": "1.0.2",
+  "license": "MIT",
+  "author": "Yuusaku Miyazaki <toumin.m7@gmail.com>",
+  "homepage": "https://github.com/sutara79/jquery.breadcrumbs-generator",
+  "main": "jquery.breadcrumbs-generator.min.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sutara79/jquery.breadcrumbs-generator.git"
+  },
+  "keywords": [
+    "jquery-plugin",
+    "breadcrumbs"
+  ],
+  "dependencies": {
+    "jquery": ">=3.0.0"
+  },
+  "devDependencies": {
+    "mocha-phantomjs-core": "^2.1.1",
+    "package-json-validator": "^0.6.1",
+    "phantomjs-prebuilt": "^2.1.14",
+    "uglify-js": "^3.0.7"
+  },
+  "scripts": {
+    "test": "phantomjs ./node_modules/mocha-phantomjs-core/mocha-phantomjs-core.js test/index.html",
+    "uglify": "uglifyjs -c -m --comments -o dist/jquery.breadcrumbs-generator.min.js -- dist/jquery.breadcrumbs-generator.js ",
+    "pjv": "pjv"
+  }
+}

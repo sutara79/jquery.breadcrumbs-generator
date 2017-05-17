@@ -1,38 +1,64 @@
 # jquery.breadcrumbs-generator
-A jQuery plugin for generating a breadcrumbs automatically from sitemaps.  
-If you can use a server-side language (e.g. PHP, Ruby, Perl), you don't need this plugin.
 
-![screenshot](http://www.usamimi.info/~sutara/sample2/breadcrumbs-generator/sample/ss1.png)
+[![Build Status](https://travis-ci.org/sutara79/jquery.breadcrumbs-generator.svg?branch=master)](https://travis-ci.org/sutara79/jquery.breadcrumbs-generator)
+[![dependencies Status](https://david-dm.org/sutara79/jquery.breadcrumbs-generator/status.svg)](https://david-dm.org/sutara79/jquery.breadcrumbs-generator)
 
-- Demo: [www.usamimi.info/~sutara/sample2/breadcrumbs-generator/](//www.usamimi.info/~sutara/sample2/breadcrumbs-generator/)
-- JSDoc: [www.usamimi.info/~sutara/sample2/breadcrumbs-generator/jsdoc](//www.usamimi.info/~sutara/sample2/breadcrumbs-generator/jsdoc)
-- GitHub: [github.com/sutara79/jquery.breadcrumbs-generator](//github.com/sutara79/jquery.breadcrumbs-generator)
+jQuery plugin to generate breadcrumb list automatically from sitemap.  
+If you can use server-side language (e.g. PHP, Ruby, Perl), you don't need this plugin.
+
+![screenshot](./sample/ss1.png)
+
+
+## Demo
+https://sutara79.github.io/jquery.breadcrumbs-generator
+
+
+## Install
+- [GitHub](https://github.com/sutara79/jquery.breadcrumbs-generator): Clone or download.
+- [npm](https://www.npmjs.com/package/jquery.breadcrumbs-generator): `npm i jquery.breadcrumbs-generator`
+- CDN ([jsDelivr](https://github.com/jsdelivr/jsdelivr#usage)):
+    - jquery.breadcrumbs-generator.min.js: [v1.0.2](https://cdn.jsdelivr.net/npm/jquery.breadcrumbs-generator@1.0.2/dist/jquery.breadcrumbs-generator.min.js)
+
 
 ## Usage
-##### &lt;head&gt;
+###### &lt;head&gt;
 ```html
-<script src="//code.jquery.com/jquery.min.js"></script>
-<script src="jquery.breadcrumbs-generator.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="jquery.breadcrumbs-generator.min.js"></script>
 <script>
-	jQuery(document).ready(function($) {
-		$('#breadcrumbs').breadcrumbsGenerator();
-	});
+$(function() {
+  $('#breadcrumbs').breadcrumbsGenerator();
+});
 </script>
 ```
 
-##### &lt;body&gt;
+###### &lt;body&gt;
 ```html
 <ol id="breadcrumbs"></ol>
 <ul id="sitemaps">
-	<li>
-		<a href="index.html">Home</a>
-		<ul>
-			<li><a href="menu1.html">Menu1</a></li>
-			<li><a href="menu2.html">Menu2</a></li>
-			<li><a href="menu3.html">Menu3</a></li>
-		</ul>
-	</li>
+  <li>
+    <a href="index.html">Home</a>
+    <ul>
+      <li><a href="menu1.html">Menu1</a></li>
+      <li><a href="menu2.html">Menu2</a></li>
+      <li><a href="menu3.html">Menu3</a></li>
+    </ul>
+  </li>
 </ul>
+```
+
+###### CSS
+```css
+#breadcrumbs li {
+  display: inline-block;
+}
+#breadcrumbs li:not(:first-child) {
+  margin-left: 0.4em;
+}
+#breadcrumbs li:not(:first-child):before {
+  content: '>';
+  margin-right: 0.4em;
+}
 ```
 
 ## Note
@@ -50,32 +76,37 @@ If you use `#sitemaps` as a global-navi, and don't need the home-link, you can a
 ```html
 <ol id="breadcrumbs"><li><a href="index.html">Home</a></li></ol>
 <ul id="sitemaps">
-	<li><a href="menu1.html">Menu1</a></li>
-	<li><a href="menu2.html">Menu2</a></li>
-	<li><a href="menu3.html">Menu3</a></li>
+  <li><a href="menu1.html">Menu1</a></li>
+  <li><a href="menu2.html">Menu2</a></li>
+  <li><a href="menu3.html">Menu3</a></li>
 </ul>
 ```
 
 ## Options
-You can set two options like followings.
+You can set options like followings.
 
 ```javascript
 $('#breadcrumbs').breadcrumbsGenerator({
-	// default value
-	sitemaps: '#sitemaps',
-	index_type: 'index.html'
+  sitemaps: '#sitemaps',
+  index_type: 'index.html'
 });
 ```
 
-##### index_type
-This is for when the requested url is a directory (e.g. `example.com/`) but not a file (e.g. `example.com/index.html`).
+|Name      |Type  |Default     |Description                |
+|----------|------|------------|---------------------------|
+|sitemaps  |string|'#sitemaps' |jQuery selector for sitemap|
+|index_type|string|'index.html'|Filename of directory index. This is for when the requested url is a directory (e.g. `example.com/`), not a file (e.g. `example.com/index.html`).|
 
-## Author
-Yuusaku Miyazaki (宮崎 雄策)
 
-- Mail: <toumin.m7@gmail.com>
-- Twitter: [twitter.com/sutara_lumpur](//twitter.com/sutara_lumpur)
-- Blog: [sutara79.hatenablog.com/entry/2015/04/04/215219](//sutara79.hatenablog.com/entry/2015/04/04/215219)
+## Compatibility
+- jQuery: >=3.0.0 ([because of XSS vulnerability](https://nodesecurity.io/advisories/jquery_xss))
+- Browser: Chrome58, Firefox53, IE11, Edge14
+
 
 ## License
-[MIT License](http://www.opensource.org/licenses/mit-license.php)
+[MIT](http://www.opensource.org/licenses/mit-license.php)
+
+
+## Author
+[Yuusaku Miyazaki](http://sutara79.hatenablog.com/entry/2015/04/04/215219)
+( <toumin.m7@gmail.com> )

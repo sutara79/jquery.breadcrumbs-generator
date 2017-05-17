@@ -1,53 +1,54 @@
 <!DOCTYPE html>
 <html lang="ja">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width,initial-scale=1.0">
-		<title>jquery.breadcrumbs-generator</title>
-		<link rel="stylesheet" href="breadcrumbs.css">
-		<script src="//code.jquery.com/jquery.min.js"></script>
-		<script src="../jquery.breadcrumbs-generator.js"></script>
-		<script>
-			jQuery(document).ready(function($) {
-				$('#breadcrumbs').breadcrumbsGenerator();
-			});
-		</script>
-	</head>
-	<body>
-		<em>Dummy</em>
-		<hr>
-		<ol id="breadcrumbs"></ol>
-		<nav id="sitemaps">
-			<h2>Sitemaps</h2>
-			<ul>
-				<li>
-					<a href="../index.html">Home</a>
-					<ul>
-						<li>
-							<a href="menu1.html">Menu1</a>
-							<ul>
-								<li><a href="menu1-1.html">Menu1-1</a></li>
-								<li><a href="menu1-2.html">Menu1-2</a></li>
-							</ul>
-						</li>
-						<li><a href="menu2.html">Menu2</a></li>
-						<li>
-							<a href="menu3.html">Menu3</a>
-							<ul>
-								<li><a href="menu3-1.html">Menu3-1</a></li>
-								<li>
-									<a href="menu3-2.html">Menu3-2</a>
-									<ul>
-										<li><a href="menu3-2-1.html">Menu3-2-1</a></li>
-										<li><a href="menu3-2-2.html">Menu3-2-2</a></li>
-										<li><a href="menu3-2-3.html">Menu3-2-3</a></li>
-									</ul>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</li>
-			</ul>
-		</nav>
-	</body>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>jquery.breadcrumbs-generator</title>
+<link rel="stylesheet" href="breadcrumbs.css">
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="../dist/jquery.breadcrumbs-generator.js"></script>
+<script>
+$(function() {
+  $('#breadcrumbs').breadcrumbsGenerator();
+});
+</script>
+</head>
+<body>
+<em>Dummy</em>
+<hr>
+<h2>Breadcrumbs</h2>
+<ol id="breadcrumbs"></ol>
+<nav id="sitemaps">
+  <h2>Sitemaps</h2>
+  <ul>
+    <li>
+      <a href="../index.html">Home</a>
+      <ul>
+        <li>
+          <a href="menu1.html">Menu1</a>
+          <ul>
+            <li><a href="menu1-1.html">Menu1-1</a></li>
+            <li><a href="menu1-2.html">Menu1-2</a></li>
+          </ul>
+        </li>
+        <li><a href="menu2.html">Menu2</a></li>
+        <li>
+          <a href="menu3.html">Menu3</a>
+          <ul>
+            <li><a href="menu3-1.html">Menu3-1</a></li>
+            <li>
+              <a href="menu3-2.html">Menu3-2</a>
+              <ul>
+                <li><a href="menu3-2-1.html">Menu3-2-1</a></li>
+                <li><a href="menu3-2-2.html">Menu3-2-2</a></li>
+                <li><a href="menu3-2-3.html">Menu3-2-3</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</body>
 </html>
