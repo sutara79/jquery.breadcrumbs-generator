@@ -15,7 +15,7 @@
     "breadcrumbs"
   ],
   "dependencies": {
-    "jquery": ">=3.0.0"
+    "jquery": "^3.2.1"
   },
   "devDependencies": {
     "mocha-phantomjs-core": "^2.1.1",

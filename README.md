@@ -14,7 +14,7 @@ https://sutara79.github.io/jquery.breadcrumbs-generator
 
 
 ## Install
-- [GitHub](https://github.com/sutara79/jquery.breadcrumbs-generator): Clone or download.
+- [GitHub](https://github.com/sutara79/jquery.breadcrumbs-generator): Clone or download. Only you need is `dist/`.
 - [npm](https://www.npmjs.com/package/jquery.breadcrumbs-generator): `npm i jquery.breadcrumbs-generator`
 - CDN ([jsDelivr](https://github.com/jsdelivr/jsdelivr#usage)):
     - jquery.breadcrumbs-generator.min.js: [v1.0.2](https://cdn.jsdelivr.net/npm/jquery.breadcrumbs-generator@1.0.2/dist/jquery.breadcrumbs-generator.min.js)
