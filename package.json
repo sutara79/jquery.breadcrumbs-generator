@@ -18,13 +18,16 @@
     "jquery": "^3.2.1"
   },
   "devDependencies": {
+    "eslint": "^3.19.0",
     "mocha-phantomjs-core": "^2.1.1",
     "package-json-validator": "^0.6.1",
     "phantomjs-prebuilt": "^2.1.14",
     "uglify-js": "^3.0.7"
   },
   "scripts": {
-    "test": "phantomjs ./node_modules/mocha-phantomjs-core/mocha-phantomjs-core.js test/index.html",
+    "test": "npm run eslint && npm run utest",
+    "eslint": "eslint dist/jquery.breadcrumbs-generator.js",
+    "utest": "phantomjs ./node_modules/mocha-phantomjs-core/mocha-phantomjs-core.js test/index.html",
     "uglify": "uglifyjs -c -m --comments -o dist/jquery.breadcrumbs-generator.min.js -- dist/jquery.breadcrumbs-generator.js ",
     "pjv": "pjv"
   }
