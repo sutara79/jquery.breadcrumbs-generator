@@ -1,6 +1,6 @@
 /**
  * @file jquery.breadcrumbs-generator
- * @version 1.0.2
+ * @version 1.0.3
  * @author Yuusaku Miyazaki <toumin.m7@gmail.com>
  * @license MIT
  */
@@ -63,9 +63,9 @@
 
       // Evacuate contents before emptize
       var origin_elem = $(this.elem).children();
-
       $(this.elem).empty();
 
+      // Generate breadcrumbs
       var self = this;
       $(target_elem)
         .parentsUntil(this.option.sitemaps)

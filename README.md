@@ -1,7 +1,7 @@
 # jquery.breadcrumbs-generator
 
+[![npm version](https://img.shields.io/npm/v/jquery.breadcrumbs-generator.svg)](https://www.npmjs.com/package/jquery.breadcrumbs-generator)
 [![Build Status](https://travis-ci.org/sutara79/jquery.breadcrumbs-generator.svg?branch=master)](https://travis-ci.org/sutara79/jquery.breadcrumbs-generator)
-[![dependencies Status](https://david-dm.org/sutara79/jquery.breadcrumbs-generator/status.svg)](https://david-dm.org/sutara79/jquery.breadcrumbs-generator)
 
 jQuery plugin to generate breadcrumb list automatically from sitemap.  
 If you can use server-side language (e.g. PHP, Ruby, Perl), you don't need this plugin.
@@ -17,7 +17,7 @@ https://sutara79.github.io/jquery.breadcrumbs-generator
 - [GitHub](https://github.com/sutara79/jquery.breadcrumbs-generator): Clone or download. Only you need is `dist/`.
 - [npm](https://www.npmjs.com/package/jquery.breadcrumbs-generator): `npm i jquery.breadcrumbs-generator`
 - CDN ([jsDelivr](https://github.com/jsdelivr/jsdelivr#usage)):
-    - jquery.breadcrumbs-generator.min.js: [v1.0.2](https://cdn.jsdelivr.net/npm/jquery.breadcrumbs-generator@1.0.2/dist/jquery.breadcrumbs-generator.min.js)
+    - jquery.breadcrumbs-generator.min.js: [v1.0.3](https://cdn.jsdelivr.net/npm/jquery.breadcrumbs-generator@1.0.3/dist/jquery.breadcrumbs-generator.min.js)
 
 
 ## Usage
